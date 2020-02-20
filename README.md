@@ -1,4 +1,4 @@
-# Exercicio Etec
+# Exercicio Etec Basilidis de Godoy
 Exercícios realizados em sala de aula
 
 Sistema de calculo de operações basicas, nas linguagens CSS, HTML, JavaScript.
