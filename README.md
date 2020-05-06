@@ -10,5 +10,5 @@ Exercícios realizados em sala de aula
 
 Sistema de calcular tabuada
 
-![tabuada](https://user-images.githubusercontent.com/48251038/81135374-5117c000-8f2e-11ea-8546-1d20a96e2c26.gif)
+![tabuada](https://user-images.githubusercontent.com/48251038/81135421-7e646e00-8f2e-11ea-8d10-c94816a2afac.gif)
 
