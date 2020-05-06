@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+	<meta charset="utf-8"/>
+		<title> Tabuada </title>
+		<style>
+
+			form
+			{
+			font-family: 'Lucida Sans';
+			background-color:rgb(255,100,50);		
+			color:white;
+
+			border-radius:20%;
+			
+			}
+			
+		</style>
+	<script language="JavaScript">
+	
+		
+	
+		function Calcular()
+		{
+		    var n1=document.getElementById("txtn1").value;
+			var ulResultado = document.getElementById("resultado"); 
+			
+			
+			if ((isNaN(n1)) || (n1 == ""))
+			{
+			window.alert(" O Valor é invalido!");
+			document.getElementById("txtn1").value="";
+			document.getElementById("txtn1").focus();
+			return;
+			}	
+			
+			ulResultado.innerHTML = "";
+			for( var i=1; i<=10; i++)
+			{
+				var li = document.createElement("LI");
+				var resul = n1*i;
+				li.appendChild(document.createTextNode(i +"x"+ n1 + "=" + resul));
+				ulResultado.appendChild(li);
+				
+			}
+		}
+	
+	
+	
+	function Limpar()
+		{
+			var ulResultado = document.getElementById("resultado");
+		
+			document.getElementById("txtn1").focus();
+			ulResultado.innerHTML = "";
+		}
+		
+
+		
+	</script>
+	
+	</head>
+	<body>
+		<Center>
+			<Form>
+				<h1> Tabuada</h1>
+					<table>
+						<tr>
+							<td> Escolha um valor
+							<input type="text" id="txtn1"/> </td>
+							<td><input type = "button" value="Calcular" onClick="Calcular()"/>
+							<input type="reset" value="Limpar" onClick="Limpar()"/></td> 
+						</tr>
+						<tr>
+						<td>
+							<ul id="resultado">
+							</ul>
+						
+						</td>
+						</tr>
+					</table>
+				
+			</form>
+		</center>
+	
+	</body>
+	</html>
